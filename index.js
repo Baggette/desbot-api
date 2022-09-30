@@ -23,7 +23,6 @@ app.get('/random', (req, res) => {
             "hello fellow citizen",
             "let's play super smash flash",
             "Mitochondria are the powerhouses of the cell",
-            `I am currently in ${client.guilds.cache.size} servers`,
             "I am superior",
             "Come back to me in 1000 years time",
             "I am whiter than sour cream",
@@ -56,7 +55,6 @@ app.get('/all', (req, res) => {
             "hello fellow citizen",
             "let's play super smash flash",
             "Mitochondria are the powerhouses of the cell",
-            `I am currently in ${client.guilds.cache.size} servers`,
             "I am superior",
             "Come back to me in 1000 years time",
             "I am whiter than sour cream",
@@ -70,6 +68,6 @@ app.get('/all', (req, res) => {
     };
     return res.send(value);
 });
-app.listen(6969, () =>
+app.listen(6966, () =>
     console.log("Des api is online")
 );
