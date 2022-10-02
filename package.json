@@ -19,6 +19,7 @@
   "homepage": "https://github.com/DashCruft/PissCruft-Ai#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.18",
+    "select-random-file": "^1.2.1"
   }
 }
