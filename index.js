@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const randomFile = require('select-random-file};
 
 app.get('/', function (req, res) {
     return res.send('welcome to teh desbot api use /random to get a rangom reply or /all to view all of them');
@@ -67,6 +68,16 @@ app.get('/all', (req, res) => {
         "response": replies,
     };
     return res.send(value);
+});
+app.get('/endgame', (req, res) => {
+    const dir = './img'
+    randomFile(dir, (err, file) => {
+        const value = {
+        "img": file,
+    };
+        return res.send(value);
+    })
+    
 });
 app.listen(6966, () =>
     console.log("Des api is online")
