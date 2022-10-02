@@ -73,7 +73,7 @@ app.get('/endgame', (req, res) => {
     const dir = './img'
     randomFile(dir, (err, file) => {
         const value = {
-        "img": file,
+        "img": 'https://baggette.cf/img/{$file}',
     };
         return res.send(value);
     })
