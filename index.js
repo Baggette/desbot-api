@@ -3,7 +3,7 @@ const app = express();
 const randomFile = require('select-random-file');
 
 app.get('/', function (req, res) {
-    return res.send('welcome to the desbot api use /random to get a rangom reply, /all to see them all or /endgame to get a random endgame frame from the 2 movies');
+    return res.send('welcome to the desbot api use /random to get a random reply, /all to see them all or /endgame to get a random endgame frame from the 2 movies');
 });
 
 app.get('/random', (req, res) => {
